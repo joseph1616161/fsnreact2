@@ -29,7 +29,7 @@ app.get("/", function(req, res) {
 	res.send("hi");
 });
 require("./routes/authRoutes")(app); // SAME AS : const authRoutes = require("./routes/authRoutes"); authRoutes(app);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
 	console.log("====================================");
 	console.log(`SERVER STARTED, LISTENING PORT ${PORT}`);

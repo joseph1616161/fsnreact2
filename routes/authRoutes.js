@@ -14,6 +14,9 @@ module.exports = app => {
 		(req, res) => {
 			console.log("====================================");
 			console.log("callback auth");
+			console.log(req.params);
+			console.log(req.body);
+			console.log(req.query);
 			console.log("====================================");
 			res.redirect("/");
 		}
